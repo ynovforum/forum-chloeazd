@@ -1,0 +1,67 @@
+html
+    head
+        title PROJET INFRA
+        link(rel='stylesheet', href='css/home.css')
+        link(rel='stylesheet', href='css/navbar.css')
+        link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp", crossorigin="anonymous")
+        link(href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet")
+    body
+        div(class="navbar")
+            a(href="/")
+                img(src="/icon/sent-mail.png")
+            div(class="menu")
+                a(href="/dashboard")
+                    span Add Question
+                    a(href="")
+                        span Browse
+                a(href="")
+                    span Your Tickets
+            div(class="profile")
+                form(method="post")
+                    input(type="text", name="search", placeholder="Search")
+                    button(type="submit")
+                        i(class="fa fa-search")
+                a(href="/profile")
+                a(class="power" href="disconnect")
+                    img(src="icon/power-button.png")
+        div(class="container-home")
+            div(class="h2-title")
+                h2 Featured Questions
+            div(class="container-img")
+                div(class="img-home")
+                    img(src="/img/canyon.jpg")
+                    div(class="flex")
+                        div(class="img-title")
+                            h2 Designing in US
+                            p United States, San Fransisco
+                        div(class="img-button")
+                            button Buy for $560
+                div(class="img-home margin")
+                    img(src="/img/canyon.jpg")
+                    div(class="flex")
+                        div(class="img-title")
+                            h2 Photography Class
+                            p United States, San Fransisco
+                        div(class="img-button")
+                            button Buy for $280
+            div(class="container-question")
+                h2 All Questions
+                div(class="title-question")
+                    div(class="p1-question")
+                        p Title
+                    div(class="p1-question padding")
+                        p User
+                    div(class="p1-question padding")
+                        p Date
+        div(class="home-question")
+            div(class="res-question")
+
+                h1 All questions
+                    for question in questions
+
+                        div(class="container-qlist")
+                            div(class="question-list")
+                                form(method="post")
+                                    p #{question.nameQ}
+                                    p #{question.description}

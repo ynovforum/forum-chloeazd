@@ -1,0 +1,118 @@
+html
+    head
+        title PROJET INFRA
+        link(rel="stylesheet", href="/css/profile.css")
+        link(rel="stylesheet", href="/css/navbar.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp", crossorigin="anonymous")
+        link(href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet")
+    body
+        div(class="navbar")
+            a(href="/")
+                img(src="/icon/sent-mail.png")
+            div(class="menu")
+                a(href="/dashboard")
+                    span Add Question
+                    a(href="")
+                        span Browse
+                a(href="")
+                    span Your Tickets
+            div(class="profile")
+                form(method="post")
+                    input(type="text", name="search", placeholder="Search")
+                    button(type="submit")
+                        img(src="icon/search.png")
+                a(href="/profile")
+                a(class="power" href="disconnect")
+                    img(src="icon/power-button.png")
+
+        div(class="profile-setting")
+            div(class="setting")
+                h2 Settings
+            div(class="automatically")
+                p Automatically Saved
+        div(class="container-profile ")
+            div(class="myProfile")
+                div(class="myProfile-list")
+                    div(class="myProfile-active")
+                        img(src="icon/man-user.png")
+                    div
+                        h2 My Profile
+                        p How your account looks like
+                div(class="myProfile-list")
+                    div
+                        img(src="icon/notification.png")
+                    div
+                        h2 Notifications
+                        p Email notifications and all around this
+                div(class="myProfile-list")
+                    div
+                        img(src="icon/reload.png")
+                    div
+                        h2 Download History
+                        p View your recent downloards
+                div(class="myProfile-list")
+                    div
+                        img(src="icon/shopping-cart.png")
+                    div
+                        h2 Billing & Invoices
+                        p Everything about your money
+                div(class="myProfile-list border")
+                    div
+                        img(src="icon/email.png")
+                    div
+                        h2 Support
+                        p Do you need help?
+
+            div(class="bio")
+                div(class="bio-1")
+                    h2 My Profile
+                    div(class="bio-form")
+                        form
+                            div(class="bio-img flex")
+                                div(class="bio-left")
+                                    img(src="icon/reload.png")
+                                div(class="bio-right")
+                                    label Your name
+                                    input(name="yourName",placeholder="Clark Horton", value=user.firstname)
+                            label Bio
+                            textarea #{user.bio}
+                            label E-mail Address
+                            input(type="email", placeholder="clark@note.com", value=user.firstname)
+                            button Change
+                            label Password
+                            input(type="password", value=user.password)
+                            button Change
+
+                div(class="service")
+                    h2 Connected Services
+                    div(class="service-list")
+                        div(class="service-title")
+                            img(src="icon/paypal.png")
+                            p Paypal
+                        div(class="mail")
+                            p me@janloser.com
+                        div(class="service-title")
+                            img(src="icon/spotify.png")
+                            p Spotify
+                        div(class="mail")
+                            p me@janloser.com
+                        div(class="service-title")
+                            img(src="icon/facebook2.png")
+                            p Facebook
+                        div(class="mail")
+                            p me@janloser.com
+                        div(class="service-title")
+                            img(src="icon/twitter2.png")
+                            p Twitter
+                        div(class="mail")
+                            p me@janloser.com
+                        div(class="service-title")
+                            img(src="icon/pinterest2.png")
+                            p Pinterest
+                        div(class="mail")
+                            p me@janloser.com
+
+
+
+

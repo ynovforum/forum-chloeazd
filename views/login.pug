@@ -1,0 +1,33 @@
+html
+    head
+        meta(charset='UTF-8')
+        title PROJET INFRA
+        link(rel="stylesheet", href="/css/login.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp", crossorigin="anonymous")
+        link(href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet")
+    body
+        div(class="container")
+            div(class="container-title")
+                i(class="fas fa-arrow-alt-circle-down")
+                h1 Welcome back! Please login.
+            div(class="container-login")
+                form(method="POST", action="/login")
+                    label Sign in with your e-mail address
+                    input(type="email", name="username", placeholder="clark@dashboard.com")
+                    label Password
+                    input(type="password", name="password", placeholder="******")
+                    button(type="submit" class="btn btn-success") Sign in to Dashboard
+
+            div(class="social-network")
+                h2 Login via social networks
+                div(class="icon")
+                    i(class="fab fa-twitter-square")
+                    i(class="fab fa-facebook")
+                    i(class="fab fa-pinterest-square")
+                    i(class="fab fa-google-plus-square")
+            div(class="account")
+                a(href="/registration") Don't have an account yet? Get Started
+            div(class="forget")
+                a(href="/registration") Forgot Password ?
+
