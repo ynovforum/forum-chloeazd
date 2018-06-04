@@ -9,7 +9,7 @@ html
     body
         div(class="navbar")
             a(href="/")
-                img(src="/icon/sent-mail.png")
+                img(src="icon/sent-mail.png")
             div(class="menu")
                 a(href="/dashboard")
                     span Add Question
@@ -23,8 +23,8 @@ html
                     button(type="submit")
                         i(class="fa fa-search")
                 a(href="/profile")
-                a(class="power" href="disconnect")
-                    img(src="icon/power-button.png")
+                a(class="power" href="/profile")
+                    img(src="img/p.png")
         div(class="container-home")
             div(class="h2-title")
                 h2 Featured Questions
@@ -54,14 +54,3 @@ html
                         p User
                     div(class="p1-question padding")
                         p Date
-        div(class="home-question")
-            div(class="res-question")
-
-                h1 All questions
-                    for question in questions
-
-                        div(class="container-qlist")
-                            div(class="question-list")
-                                form(method="post")
-                                    p #{question.nameQ}
-                                    p #{question.description}
